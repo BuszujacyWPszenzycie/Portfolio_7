@@ -1,2 +1,16 @@
 @media (min-width: 992px) {
+	.about {
+		flex-direction: row;
+
+		&__picture {
+			width: 400px;
+			margin: 2rem;
+			border-radius: 20px;
+		}
+
+		&__p {
+			font-size: 2rem;
+			padding: 1.8rem;
+		}
+	}
 }

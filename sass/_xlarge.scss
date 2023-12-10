@@ -1,2 +1,29 @@
 @media (min-width: 1200px) {
+	.header {
+		&__top {
+			width: 1200px;
+		}
+		&__box {
+			width: 1200px;
+		}
+
+		&__title {
+			font-size: 4.5rem;
+		}
+
+		&__subtitle {
+			font-size: 3.5rem;
+		}
+	}
+
+	.nav {
+		&__item {
+			font-size: 2.5rem;
+			padding: 1.5rem;
+		}
+	}
+
+	.about {
+		margin-top: 10rem;
+	}
 }

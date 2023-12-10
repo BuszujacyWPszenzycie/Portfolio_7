@@ -1,2 +1,31 @@
 @media (min-width: 576px) {
+	.nav {
+		&__item {
+			font-size: 1.6rem;
+		}
+	}
+
+	.header {
+		&__box {
+			width: 450px;
+		}
+
+		&__title {
+			font-size: 3.2rem;
+		}
+		&__subtitle {
+			font-size: 2rem;
+		}
+	}
+
+	// ABOUT
+
+	.about {
+		&__picture {
+			width: 400px;
+		}
+		&__p {
+			font-size: 1.5rem;
+		}
+	}
 }

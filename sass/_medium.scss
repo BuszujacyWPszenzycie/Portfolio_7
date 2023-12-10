@@ -1,2 +1,58 @@
 @media (min-width: 768px) {
+	.header {
+		&__box {
+			width: 700px;
+		}
+		&__top {
+			width: 768px;
+			flex-direction: row;
+			justify-content: space-between;
+			padding: 2rem;
+		}
+		&__icon {
+			&--code {
+				display: block;
+				text-decoration: none;
+			}
+		}
+
+		&__title {
+			font-size: 4rem;
+		}
+
+		&__subtitle {
+			font-size: 3rem;
+		}
+	}
+
+	.nav {
+		&__item {
+			font-size: 2.2rem;
+		}
+	}
+
+	// ABOUT
+
+	.about {
+		flex-direction: row;
+
+		&__picture {
+			width: 300px;
+			margin: 2rem;
+			border-radius: 20px;
+		}
+
+		&__text {
+			// height: 400px;
+			// background-color: red;
+			justify-content: center;
+			display: flex;
+			flex-direction: column;
+		}
+
+		&__p {
+			font-size: 1.8rem;
+			padding: 1.5rem;
+		}
+	}
 }

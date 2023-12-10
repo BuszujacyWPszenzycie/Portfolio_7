@@ -21,26 +21,37 @@ body {
 	justify-content: center;
 }
 
-.page__wrapper {
-	width: 1200px;
+a {
+	text-decoration: none;
 }
+
+.page__wrapper {
+	max-width: 1200px;
+}
+
+// HEADER
 
 .header {
 	margin-top: 3rem;
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
 	&__top {
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
+		flex-direction: column;
 	}
 
 	&__icon {
-		padding: 2rem;
-
 		&--code {
+			margin-top: 1rem;
+			margin-bottom: 2rem;
 			color: $black;
-			font-size: 5rem;
+			font-size: 6rem;
+
 			cursor: pointer;
 			transition: transform 0.4s;
 
@@ -51,36 +62,41 @@ body {
 	}
 
 	&__box {
-		margin-top: 10rem;
-		width: 100%;
+		margin-top: 2rem;
+		margin-left: 2rem;
+		margin-right: 2rem;
+		width: 350px;
 		height: 400px;
-		background-color: $light-gray;
+		background-color: $light-blue;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
 		border-radius: 20px;
+		box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 0.2);
 	}
 
 	&__title {
-		font-size: 4rem;
+		font-size: 3rem;
 		padding: 2rem;
 	}
 
 	&__subtitle {
-		font-size: 2.8rem;
+		font-size: 1.7rem;
 		padding: 0.5rem;
+		color: $dark-grey;
 	}
 }
 
 .nav {
 	display: flex;
-	background-color: $light-gray;
+	background-color: $light-blue;
 	border-radius: 50px;
+	margin: 2rem;
 
 	&__wrapper {
 		padding: 1rem;
-		margin: 1.2rem;
+		margin: 0.5rem;
 		border-radius: 50px;
 		transition: background-color 0.4s;
 		&:hover {
@@ -95,8 +111,43 @@ body {
 	&__item {
 		color: $black;
 		text-decoration: none;
-		font-size: 2rem;
-		padding: 1rem;
+		font-size: 1.2rem;
+		padding: 0.5rem;
 		transition: color 0.4s;
 	}
 }
+
+// ABOUT
+
+.about {
+	margin-top: 5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	&__picture {
+		width: 350px;
+		border-radius: 20px;
+		margin-top: 5rem;
+		box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 0.2);
+	}
+
+	&__p {
+		margin-left: 1.5rem;
+		font-size: 1.3rem;
+		padding: 1rem;
+	}
+
+	&__a {
+		// text-decoration: none;
+		text-decoration: underline;
+		color: inherit;
+		color: $ice-blue;
+	}
+}
+
+@import './small';
+@import './medium';
+@import './large';
+@import './_xlarge';
